@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DIRECT+ | Actualités</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+
+<div class="top-header">
+
+
+<div class="logo">
+DIRECT<span>+</span>
+</div>
+
+
+<div class="account-area">
+
+
+<div id="userArea">
+
+<button id="connexionBtn" class="login-button">
+Connexion
+</button>
+
+</div>
+
+
+
+<div id="profileArea" class="profile-area" style="display:none;">
+
+
+<img 
+id="profileImg"
+class="profile-picture"
+src=""
+alt="Profil">
+
+
+<div class="profile-menu">
+
+
+<strong id="pseudoDisplay"></strong>
+
+
+<hr>
+
+
+<button id="descBtn">
+📝 Modifier la description
+</button>
+
+
+<button id="logoutBtn">
+🚪 Déconnexion
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- NAVIGATION -->
+
+
+<nav class="navigation">
+
+
+<a href="#">
+Politique
+</a>
+
+
+<a href="#">
+International
+</a>
+
+
+<a href="#">
+Économie
+</a>
+
+
+<a href="#">
+Culture
+</a>
+
+
+<a href="#">
+Sport
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<!-- ================= MODAL CONNEXION ================= -->
+
+
+<div id="authModal" class="modal">
+
+
+<div class="modal-box">
+
+
+<span class="close">
+×
+</span>
+
+
+<h2>
+Connexion
+</h2>
+
+
+
+<form id="loginForm">
+
+
+<input
+id="loginPseudo"
+type="text"
+placeholder="Pseudo"
+required>
+
+
+<input
+id="loginPassword"
+type="password"
+placeholder="Mot de passe"
+required>
+
+
+<button class="main-button">
+Se connecter
+</button>
+
+
+<p>
+Pas encore de compte ?
+<span id="toRegister">
+Créer un compte
+</span>
+</p>
+
+
+</form>
+
+
+
+
+
+<form id="registerForm" style="display:none;">
+
+
+<h2>
+Créer un compte
+</h2>
+
+
+<img 
+id="previewImg"
+class="preview"
+src="https://via.placeholder.com/150">
+
+
+
+<input
+id="imageInput"
+type="file"
+accept="image/*">
+
+
+
+<input
+id="regPseudo"
+type="text"
+placeholder="Pseudo"
+required>
+
+
+
+<input
+id="regPassword"
+type="password"
+placeholder="Mot de passe"
+required>
+
+
+
+<input
+id="regPasswordConfirm"
+type="password"
+placeholder="Confirmer"
+required>
+
+
+
+<button class="main-button">
+S'inscrire
+</button>
+
+
+<p>
+Déjà un compte ?
+<span id="toLogin">
+Connexion
+</span>
+</p>
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- ================= MODAL DESCRIPTION ================= -->
+
+
+<div id="descModal" class="modal">
+
+
+<div class="modal-box">
+
+
+<span class="close">
+×
+</span>
+
+
+<h2>
+Description
+</h2>
+
+
+<form id="descForm">
+
+
+<textarea 
+id="descText"
+maxlength="500"
+placeholder="Présentez-vous...">
+</textarea>
+
+
+<p>
+<span id="charCount">
+0
+</span>
+/
+500
+</p>
+
+
+
+<button class="main-button">
+Enregistrer
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</div>
